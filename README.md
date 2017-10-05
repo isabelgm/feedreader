@@ -31,3 +31,5 @@ Note: the loadFeed() function is an asynchronous function.
 ### New Feed Selection Suite
 1. Ensure that the content of a feed actually changes when a new
 feed is selected.
+
+![Feed Reader Screenshot](/images/feedreader.png)
