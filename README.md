@@ -32,4 +32,6 @@ Note: the loadFeed() function is an asynchronous function.
 1. Ensure that the content of a feed actually changes when a new
 feed is selected.
 
+## Screenshot
+
 ![Feed Reader Screenshot](/images/feedreader.png)
