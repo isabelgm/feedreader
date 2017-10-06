@@ -26,7 +26,6 @@ $(function() {
          * and that the URL is not empty.
          */
          it('have a URL', function(){
-           var feed;
            allFeeds.forEach(function(feed){
              expect(feed.url).toBeDefined;
              expect(feed.url).not.toBe('');
@@ -39,7 +38,6 @@ $(function() {
          */
 
          it('have a name', function(){
-           var feed;
            allFeeds.forEach(function(feed){
              expect(feed.name).toBeDefined;
              expect(feed.name).not.toBe('');
