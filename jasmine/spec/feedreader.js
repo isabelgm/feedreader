@@ -100,26 +100,22 @@ $(function() {
        * by the loadFeed function that the content actually changes.
        */
 
-       var content;
+       var content,
+           newContent;
 
        /* loads initial content with feed id of 0 */
        beforeEach(function(done){
           loadFeed(0, function(){
             content = $('.feed').html();
-            done();
+            loadFeed(1, function(){
+              newContent = $('.feed').html();
+              done();
+            });
           });
        });
 
        /* changes the id of the feed from 0 to 1 to test if content changes */
        it('changes content', function(done){
-         var newContent;
-
-         loadFeed(1, function(){
-           newContent = $('.feed').html();
-           done();
-           return newContent;
-         });
-
          expect(content).not.toEqual(newContent);
        });
     });
