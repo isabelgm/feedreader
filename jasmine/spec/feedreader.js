@@ -113,7 +113,7 @@ $(function() {
        });
 
        /* changes the id of the feed from 0 to 1 to test if content changes */
-       it('changes content', function(done){
+       it('changes content', function(){
          expect(content).not.toEqual(newContent);
        });
     });
