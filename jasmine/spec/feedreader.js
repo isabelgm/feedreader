@@ -27,11 +27,10 @@ $(function() {
          */
          it('have a URL', function(){
            var feed;
-           for( var i = 0; i < allFeeds.length; i++){
-             feed = allFeeds[i];
+           allFeeds.forEach(function(feed){
              expect(feed.url).toBeDefined;
              expect(feed.url).not.toBe('');
-           }
+           });
          });
 
         /* This test loops through each feed
@@ -41,11 +40,10 @@ $(function() {
 
          it('have a name', function(){
            var feed;
-           for( var i = 0; i < allFeeds.length; i++){
-             feed = allFeeds[i];
+           allFeeds.forEach(function(feed){
              expect(feed.name).toBeDefined;
              expect(feed.name).not.toBe('');
-           }
+           });
          });
     });
 
