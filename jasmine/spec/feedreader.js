@@ -89,7 +89,7 @@ $(function() {
        });
 
        it('have at least a single entry', function(){
-         expect($('.entry')).not.toBe(0);
+         expect($('.feed .entry').length).toBeGreaterThan(0);
        });
     });
 
