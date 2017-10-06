@@ -27,7 +27,7 @@ $(function() {
          */
          it('have a URL', function(){
            allFeeds.forEach(function(feed){
-             expect(feed.url).toBeDefined;
+             expect(feed.url).toBeDefined();
              expect(feed.url).not.toBe('');
            });
          });
@@ -39,7 +39,7 @@ $(function() {
 
          it('have a name', function(){
            allFeeds.forEach(function(feed){
-             expect(feed.name).toBeDefined;
+             expect(feed.name).toBeDefined();
              expect(feed.name).not.toBe('');
            });
          });
